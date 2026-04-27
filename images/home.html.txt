@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Panda | Modern Chinese Kitchen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-ink: #1a1a1a;
+            --warm-white: #fdfaf6;
+            --accent-gold: #D4AF37;
+            --crimson: #8E1616;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; background: var(--warm-white); color: var(--dark-ink); }
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: fixed; width: 100%; top: 0; background: white;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .logo { font-family: 'Ma Shan Zheng', cursive; font-size: 2.2rem; color: var(--crimson); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark-ink); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; }
+
+        /* --- HERO SECTION (HOME) --- */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center;
+        }
+        header h1 { font-family: 'Ma Shan Zheng'; font-size: 6rem; margin: 0; color: var(--accent-gold); }
+        header p { font-size: 1.5rem; letter-spacing: 3px; font-weight: 300; }
+
+        /* --- MENU SECTION --- */
+        #menu { padding: 100px 5%; background: white; }
+        .menu-hero {
+            width: 100%; height: 350px; border-radius: 15px; margin-bottom: 50px;
+            background: url('https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&q=80&w=1500') center/cover;
+        }
+        .section-title { text-align: center; font-family: 'Ma Shan Zheng'; font-size: 3rem; color: var(--crimson); }
+        
+        .menu-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
+        }
+        .menu-item { background: var(--warm-white); border-radius: 10px; overflow: hidden; transition: 0.3s; }
+        .menu-item:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .menu-img { width: 100%; height: 220px; object-fit: cover; }
+        .menu-text { padding: 20px; }
+        .menu-text h3 { margin: 0; color: var(--crimson); }
+        .price { color: var(--accent-gold); font-weight: bold; }
+
+        /* --- ABOUT SECTION --- */
+        #about { padding: 100px 10%; display: flex; align-items: center; gap: 50px; }
+        .chef-img { width: 450px; height: 600px; object-fit: cover; border-radius: 20px; border-left: 10px solid var(--accent-gold); }
+        .about-content h2 { font-size: 3rem; margin-bottom: 20px; }
+
+        /* --- CONTACT SECTION --- */
+        #contact { padding: 100px 5%; background: var(--dark-ink); color: white; display: flex; gap: 50px; }
+        .contact-card { flex: 1; padding: 40px; background: rgba(255,255,255,0.05); border-radius: 15px; }
+        .contact-card h2 { font-family: 'Ma Shan Zheng'; font-size: 3rem; color: var(--accent-gold); }
+        .contact-link { display: block; color: white; font-size: 1.5rem; text-decoration: none; margin: 20px 0; transition: 0.3s; }
+        .contact-link:hover { color: var(--accent-gold); }
+        .map-box { flex: 1; border-radius: 15px; overflow: hidden; border: 2px solid var(--accent-gold); }
+
+        footer { text-align: center; padding: 30px; background: #111; color: #555; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            #about, #contact { flex-direction: column; }
+            .chef-img { width: 100%; height: auto; }
+            header h1 { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home" class="logo">宝贝熊猫</a>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section id="home">
+    <header>
+        <h1>Baby Panda</h1>
+        <p>AUTHENTIC CHINESE KITCHEN</p>
+    </nav>
+</header>
+
+<section id="menu">
+    <div class="menu-hero"></div>
+    <h2 class="section-title">The Chef's Selection</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500" class="menu-img">
+            <div class="menu-text"><h3>Spicy Dan Dan Noodles <span class="price">$14</span></h3><p>Hand-pulled noodles with szechuan peppercorns.</p></div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=500" class="menu-img">
+            <div class="menu-text"><h3>Hand-Folded Dumplings <span class="price">$12</span></h3><p>Pork and chive steamed in bamboo baskets.</p></div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1512058560366-cd24295986cc?auto=format&fit=crop&w=500" class="menu-img">
+            <div class="menu-text"><h3>Signature Fried Rice <span class="price">$13</span></h3><p>Wok-tossed with fresh scallions and farm eggs.</p></div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500" class="menu-img">
+            <div class="menu-text"><h3>General Tso Chicken <span class="price">$16</span></h3><p>Sweet and spicy glaze with steamed broccoli.</p></div>
+        </div>
+        </div>
+</section>
+
+<section id="about">
+    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1000" class="chef-img" alt="Executive Chef">
+    <div class="about-content">
+        <h2>A Legacy of Flavor</h2>
+        <p>Baby Panda began as a family dream. Our Executive Chef brings 30 years of traditional Szechuan expertise to the local community, ensuring that every plate is a balance of spice, texture, and heart.</p>
+        <p>We don't just cook food; we share our history. From our hand-made dough to our proprietary sauces, everything is crafted from scratch daily.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-card">
+        <h2>Find Us</h2>
+        <p>We are located in the heart of the city. Tap below to reach out.</p>
+        <a href="tel:5551234567" class="contact-link">📞 (555) 123-4567</a>
+        <a href="mailto:hello@babypanda.com" class="contact-link">✉️ Order Online</a>
+        <a href="#" class="contact-link">📍 123 Bamboo Lane, Food City</a>
+        <p style="margin-top: 30px;">OPEN DAILY: 11:00 AM - 10:00 PM</p>
+    </div>
+    <div class="map-box">
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+</section>
+
+<footer>
+    © 2026 Baby Panda Restaurant. Designed for a Modern Heritage.
+</footer>
+
+</body>
+</html>

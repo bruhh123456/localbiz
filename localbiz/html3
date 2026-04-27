@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>html3 — LocalBiz</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>html3 — LocalBiz Images</h1>
+    <p>These images come from the main project's `images/` folder.</p>
+    <img src="../images/panda1.svg" alt="Panda 1" style="max-width:320px;display:block;margin:12px 0;">
+    <img src="../images/panda2.svg" alt="Panda 2" style="max-width:320px;display:block;margin:12px 0;">
+    <img src="../images/panda3.svg" alt="Panda 3" style="max-width:320px;display:block;margin:12px 0;">
+
+    <p><a href="../index.html">Back to site</a></p>
+  </div>
+</body>
+</html>

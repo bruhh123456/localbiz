@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#f6fff7"/>
+  <g transform="translate(120 100)">
+    <rect x="40" y="40" width="720" height="300" rx="12" fill="#fff" stroke="#eee"/>
+    <text x="80" y="120" font-size="42" fill="#2b7a0b">Find Us</text>
+    <text x="80" y="170" font-size="20" fill="#666">123 Bamboo Lane — Phone: (555) 123-4567</text>
+    <g transform="translate(520 60)">
+      <path d="M20 120 C40 40, 140 40, 160 120" stroke="#d98e4b" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <rect x="10" y="20" width="120" height="80" rx="8" fill="#ffd6a5"/>
+    </g>
+  </g>
+</svg>
